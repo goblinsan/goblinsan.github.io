@@ -3,14 +3,41 @@
 <head>
     <title>goblinsan</title>
     <style type="text/css">
-        html, body, #tbl_wrap { height: 60%; width: 100%; padding: 0; margin: 0; background-color: black;}
-        #td_wrap { vertical-align: middle; text-align: center; }
+        html, body {
+            background-color: black;
+        }
+
+        .page-container {
+            text-align: center;
+            display: grid;
+        }
+
+        .page-container::after {
+            content: "";
+            background-image: url(images/voiceinear1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .title {
+            font-family: Arial, sans-serif;
+        }
+
     </style>
 </head>
 
 <body>
-<table id="tbl_wrap"><tbody><tr><td id="td_wrap">
-    <img src="images/goblinsan.png">
-</td></tr></tbody></table>
+<div class="page-container">
+    <div class="title">
+        <img src="images/goblinsan.png">
+    </div>
+</div>
 </body>
 </html>
